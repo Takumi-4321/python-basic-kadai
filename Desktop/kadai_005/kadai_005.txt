@@ -1,0 +1,43 @@
+Last login: Mon Mar 24 21:37:05 on ttys000
+/Users/onotakumi/.zprofile:2: no such file or directory: /usr/local/bin/brew
+/Users/onotakumi/.zprofile:6: no such file or directory: /usr/local/bin/brew
+onotakumi@onotakuminoMacBook-Air ~ % cd /Users/onotakumi/Desktop/git_challenge
+onotakumi@onotakuminoMacBook-Air git_challenge % touch hello_world.txt
+onotakumi@onotakuminoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/onotakumi/Desktop/git_challenge/.git/
+onotakumi@onotakuminoMacBook-Air git_challenge % git add /Users/onotakumi/Desktop/git_challenge/hello_world.txt
+onotakumi@onotakuminoMacBook-Air git_challenge % git commit -m "hello_world.txt を追加"
+[main (root-commit) e61b8c1] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+onotakumi@onotakuminoMacBook-Air git_challenge % git add /Users/onotakumi/Desktop/git_challenge/hello_world.txt
+onotakumi@onotakuminoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[main aaa1c66] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+onotakumi@onotakuminoMacBook-Air git_challenge % git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+onotakumi@onotakuminoMacBook-Air git_challenge % touch .gitignore
+onotakumi@onotakuminoMacBook-Air git_challenge % git add .
+onotakumi@onotakuminoMacBook-Air git_challenge % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .gitignore
+
+onotakumi@onotakuminoMacBook-Air git_challenge % git log
+commit aaa1c66cbe822a752dcc1e7babdb223e9e397e23 (HEAD -> main)
+Author: Takumi-4321 <xiaoyejiang9@gmail.com>
+Date:   Tue Mar 25 00:30:15 2025 +0900
+
+    日本語訳を追記
+
+commit e61b8c1d8db78d4d818764ade01be009d354605a
+Author: Takumi-4321 <xiaoyejiang9@gmail.com>
+Date:   Tue Mar 25 00:29:19 2025 +0900
+
+    hello_world.txtを追加
